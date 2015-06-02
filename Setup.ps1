@@ -13,7 +13,7 @@ $client.DownloadFile($MachineSetupRepository + "7z.exe", "$pwd\7z.exe")
 
 $client.DownloadFile("https://github.com/Maximus5/ConEmu/releases/download/v15.05.13/ConEmuPack.150513.7z", "$pwd\ConEmu.7z")
 
-7z.exe e .\ConEmu.7z -o* -y
+.\7z.exe e .\ConEmu.7z -o* -y
 
 $client.DownloadFile($MachineSetupRepository + "ConEmu.xml", "$pwd\ConEmu\ConEmu.xml")
 
