@@ -6,8 +6,8 @@ $env:Path += ";" + $HOME + "/ConEmu"
 $client = new-object System.Net.WebClient
 $MachineSetupRepository = "https://github.com/Devagamster/MachineSetup/raw/master/"
 
-$client.DownloadFile($MachineSetupRepository + "7-zip/7z.dll", "$pwd\7z.dll")
-$client.DownloadFile($MachineSetupRepository + "7-zip/7z.exe", "$pwd\7z.exe")
+$client.DownloadFile($MachineSetupRepository + "7z.dll", "$pwd\7z.dll")
+$client.DownloadFile($MachineSetupRepository + "7z.exe", "$pwd\7z.exe")
 
 # $client.DownloadFile("https://github.com/msysgit/msysgit/releases/download/Git-1.9.5-preview20150319/PortableGit-1.9.5-preview20150319.7z", "$pwd\msysgit.7z")
 # .\7-zip\7z.exe e .\msysgit.7z.7z -o* -y
